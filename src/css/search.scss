@@ -1,0 +1,105 @@
+.search-header {
+	position: relative;
+	@include flex(row);
+	align-items: center;
+	padding: 0 30px;
+	background: #fff;
+	height: 96px;
+	.search-wrap {
+		position: relative;
+		flex: 1;
+		margin-right: 30px;
+		height: 56px;
+		line-height: 56px;
+		background-color: #f3f3f3;
+		border-radius: 30px;
+	    padding-left: 76px;
+	}
+	.search-cancel {
+		font-size: 28px;
+		color: #777;
+	}
+	.search-icon {
+		position: absolute;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		top: 16px;
+		left: 30px;
+		background: url('../../assets/images/icon-search.png') no-repeat;
+		background-size: contain;
+	}
+	.search-input {
+		border: 0;
+		height: 30px;
+		line-height: 30px;
+		margin: auto 0;
+		background: transparent;
+	    border-radius: 30px;
+	    text-indent: 10px;
+	    width: 100%;
+	}
+	.car-type {
+		line-height: 56px;
+		font-size: 28px;
+		color: #333;
+	}
+	.icon-down {
+	    display: inline-block;
+	    width: 10px;
+	    height: 8px;
+	    background: url('../../assets/images/icon-down.png') no-repeat;
+	    background-size: cover;
+	    vertical-align: middle;
+	    margin: 0 20px 0 10px;
+	}
+	.car-type-wrap {
+		position: absolute;
+		top: 96px;
+		left: 0;
+		background: #fff;
+		border: 1px solid #ececec;
+		li {
+			width: 144px;
+			line-height: 74px;
+			text-align: center;
+			font-size: 28px;
+		}
+		a {
+			color: #333;
+		}
+	}
+}
+.search-panel {
+  margin: 30px 0!important 0;
+  padding: 0 30px;
+  background-color: #f3f3f3!important;
+  .panel-header {
+    font-size: 28px;
+    color: #333;
+    padding: 0!important;
+  }
+  .search-list {
+    @include flex(row);
+    li {
+      background-color: #dcdcdc;
+      font-size: 24px;
+      margin: 24px 24px 0 0;
+      padding: 0 18px;
+      height: 48px;
+      line-height: 48px;
+      border-radius: 24px;
+      a {
+        color: #777;
+      }
+    }
+  }
+}
+.car-type-enter-active, .car-type-leave-active {
+  transform-origin: 50% 0;
+  transition: transform .2s;
+}
+.car-type-enter, .car-type-leave-to {
+  transform-origin: 50% 0;
+  transform: scaleY(0);
+}
